@@ -5,7 +5,7 @@ import pandas as pd
 
 class URLFirewallManager:
     def __init__(self, client_id, client_secret):
-        self.csv_file = 'category-new.csv'
+        self.csv_file = 'output.csv'
         self.df = None
         self.mgmt = FirewallManagement(client_id=client_id, client_secret=client_secret)
         self.policies = FirewallPolicies(client_id=client_id, client_secret=client_secret)
